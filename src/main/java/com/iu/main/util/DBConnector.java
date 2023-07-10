@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 
 public class DBConnector {
 	
-	public static void getConnection() throws Exception {
+	public static Connection getConnection() throws Exception {
 		String user="user01";
 		String password="user01";
 		String url="jdbc:oracle:thin:@43.200.173.68:1521:xe";
@@ -19,6 +19,8 @@ public class DBConnector {
 		Connection con = DriverManager.getConnection(url, user, password);
 		
 		System.out.println(con);
+		
+		return con;
 		
 	}
 
