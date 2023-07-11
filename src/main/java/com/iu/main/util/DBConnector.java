@@ -20,6 +20,7 @@ public class DBConnector {
 		
 		System.out.println(con);
 		
+		//ignore 등록
 		return con;
 		
 	}
